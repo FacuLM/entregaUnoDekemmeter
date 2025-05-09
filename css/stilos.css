@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+  background-color: #47A8BD;
+  font-family: "Roboto Condensed", sans-serif;
+}
+nav h2 {
+  text-align: center;
+}
+nav ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=stilos.css.map */
