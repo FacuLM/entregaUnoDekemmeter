@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/reset.scss","../sass/stilos.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;ACDJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACI;;AAGA;EACI;EACA;EACA;EACA;;AACA;EACI","file":"stilos.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/reset.scss","../sass/stilos.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;ACFJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACI;;AAGA;EACI;EACA;EACA;EACA;;AACA;EACI;;;AAKhB;EACY;;AACR;EACI;EACA;EACA;EACA","file":"stilos.css"}

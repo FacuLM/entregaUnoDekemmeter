@@ -1,14 +1,23 @@
-var puntos, preguntas, nombre, puntosObt, adivinanza, res, menu, opciones;
+var preguntas, nombre, menu, opciones, respuesta, confirmar;
 
-// function correcto(resUsuario,resCorrecta){
-//     let resultado=(resUsuario===resCorrecta)?"Felicidades muy bien":"Lo lamento"
-//     alert(resultado)
-// }
+// // Funcion
 
-// Inicio del Simulador 
+function vuelto(cantObj,valor){
+    cant=cantObj*valor;
+    descuento=confirm("Tenes descuento?")
+    if (descuento==true){
+        descuento=0.80;
+        total=cant-descuento;
+        alert("Tu gasto es de "+ total+" pesos. Gracias por su compra")
+    }
+    else{
+        alert("Tu gasto es de "+ cant+" pesos. Gracias por su compra") 
+    }
+}
+
+// // Inicio del Simulador 
 
 alert("Hola y bienvenido");
-alert("En este juego vamos a realizar una serie de preguntas");
 
 nombre= prompt("Primero que nada ¿Cómo te llamas?");
 
@@ -40,5 +49,46 @@ while(true){
     else{
         alert("Lo lamento vuelve a intentarlo")
     }
+}
+
+alert("Perfecto vamos con la siguiente etapa");
+
+let lista=["Manzana"," Pera"," Anana"," Frutilla"," Banana "];
+let pedido=prompt("Elige uno de estos productos "+lista);
+cant=parseInt(prompt("Cuantas " + pedido + " queres?"))
+switch (pedido){
+    case "manzana":
+        valor=1
+        vuelto(cant, valor);
+    break
+    case "pera":
+        valor=3
+        vuelto(cant, valor);
+    break
+    case "anana":
+        valor=5
+        vuelto(cant, valor);
+    break
+    case "frutilla":
+        valor=2
+        vuelto(cant, valor);
+    break
+    case "banana":
+        valor=3
+        vuelto(cant, valor);
+    break
+    default:
+        alert("Ingresaste un producto que no tenemos")
+        confirmar=confirm("Quieres agregar un producto?")
+        if (confirmar==true){
+            lista.push(prompt("Que producto quieres ingresar?"))
+            valor= parseInt(prompt("Cuanto vale el producto?"))
+            cant=parseInt(prompt("Cuantas " + pedido + " queres?"))
+            vuelto(cant, valor);
+            alert("Tienes en tu lista "+ lista + " un total de " + lista.length + " items")
+        }
+        else{
+            alert("Gracias por su compra")
+        }
 }
 
