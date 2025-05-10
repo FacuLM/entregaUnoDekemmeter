@@ -4,7 +4,7 @@ var preguntas, nombre, menu, opciones, respuesta, confirmar;
 
 function vuelto(cantObj,valor){
     cant=cantObj*valor;
-    descuento=confirm("Tenes descuento?")
+    descuento=confirm("Queres aplicar el descuento?")
     if (descuento==true){
         descuento=0.80;
         total=cant-descuento;
@@ -55,7 +55,7 @@ alert("Perfecto vamos con la siguiente etapa");
 
 let lista=["Manzana"," Pera"," Anana"," Frutilla"," Banana "];
 let pedido=prompt("Elige uno de estos productos "+lista);
-cant=parseInt(prompt("Cuantas " + pedido + " queres?"))
+cant=parseInt(prompt("Cuantos desea llevar?"))
 switch (pedido){
     case "manzana":
         valor=1
@@ -83,9 +83,9 @@ switch (pedido){
         if (confirmar==true){
             lista.push(prompt("Que producto quieres ingresar?"))
             valor= parseInt(prompt("Cuanto vale el producto?"))
-            cant=parseInt(prompt("Cuantas " + pedido + " queres?"))
+            cant=parseInt(prompt("Cuantos queres?"))
             vuelto(cant, valor);
-            alert("Tienes en tu lista "+ lista + " un total de " + lista.length + " items")
+            alert("Se agrego a la lista "+ lista + " un total de " + lista.length + " items")
         }
         else{
             alert("Gracias por su compra")
